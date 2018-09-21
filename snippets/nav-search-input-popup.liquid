@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="desktop-12 tablet-6 mobile-3">
+    <form action="/search" method="get" class="search-popup">
+      <input class="nav-search-input" type="text" name="q" id="q" placeholder="{{ 'general.search.placeholder' | t }}" />
+      <input type="hidden" name="type" value="product" />
+      <div class="nav-search-icon-wrap">
+<!--         <input class="nav-search-submit" type="submit" value=""/> -->
+        <button class="nav-search-submit" type="submit">
+        {% include 'svg-icon-search' %}
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
